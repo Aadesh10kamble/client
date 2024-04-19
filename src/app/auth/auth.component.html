@@ -1,0 +1,27 @@
+<form [formGroup]="myForm" (submit)="getValues()" class="form">
+    <h1 *ngIf="mode === 0">Login</h1>
+    <h1 *ngIf="mode === 1">Register</h1>
+
+    <div *ngIf="mode === 0" class="box label">
+        <label for="email">Email : </label>
+        <input id="email" type="text" formControlName="email">
+      
+        <label for="password">Password : </label>
+        <input id="password" type="password" formControlName="password">
+        <button type="button" (click)="loginUser()">Login</button>
+    </div>
+    <div *ngIf="mode === 1" class="box label">
+        <label for="email">Email : </label>
+        <input id="email" type="text" formControlName="email">
+      
+        <label for="password">Password : </label>
+        <input id="password" type="password" formControlName="password">
+
+        <label for="confirmPassword">Confirm Password : </label>
+        <input id="confirmPassword" type="password" formControlName="confirmPassword">
+        <button type="button" (click)="registerUser()">Register</button>
+    </div>
+
+    <button type="button" (click)="changeMode()">Change Mode</button>
+   
+  </form>

@@ -1,0 +1,12 @@
+<!-- The Value From the Parent ::: {{childValue}} -->
+ <input type="text" name="" id="" #childValue>
+ <button type="button" (click)="onSubmit(childValue.value)">Submit</button>
+<!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <label for="first-name">Email: </label>
+  <input id="first-name" type="text" formControlName="email">
+
+  <label for="last-name">Password: </label>
+  <input id="last-name" type="password" formControlName="password">
+  <button type="submit">Submit</button>
+</form> -->

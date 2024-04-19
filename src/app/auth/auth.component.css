@@ -1,0 +1,14 @@
+.form {
+    padding : 10px
+}
+.box {
+    padding-top: 10px;
+    padding-bottom : 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.label {
+    font-weight: bold;
+}
